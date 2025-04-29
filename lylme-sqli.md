@@ -17,7 +17,7 @@
 
 ## 4. Vulnerability Description
 
-A time-based blind SQL injection vulnerability exists in the `lylme_spage` project. The vulnerable point lies in the processing of the `sort` parameter in the following SQL statement:
+A time-based blind SQL injection vulnerability exists in the `lylme_spage/blob/master/admin/ajax_link.php` project. The vulnerable point lies in the processing of the `sort` parameter in the following SQL statement:
 
 ```php
 $sql = "INSERT INTO `lylme_tags` (`tag_id`, `tag_name`, `tag_link`, `tag_target`,`sort`) VALUES (NULL, '" . $name . "', '" . $link . "', '" . $target . "','" . $sort . "');"
